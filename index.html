@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Juan Pablo Ríos Agudelo | Portafolio</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -27,7 +30,479 @@ scroll-behavior:smooth;
 body{
 
 font-family:'Poppins',sans-serif;
-background:#fff;
+background:#f5f5f5;
+color:#222;
+
+}
+
+.hero{
+
+height:100vh;
+
+background-image:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("Comunicador grafico azul copia.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:40px;
+
+position:relative;
+
 color:white;
 
 }
+
+.hero-content{
+
+max-width:900px;
+
+animation:fadeUp 1s ease;
+
+}
+
+.hero h1{
+
+font-size:72px;
+
+line-height:1.1;
+
+margin-bottom:20px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+font-weight:300;
+
+margin-bottom:30px;
+
+}
+
+.hero p{
+
+font-size:21px;
+
+line-height:1.8;
+
+margin-bottom:45px;
+
+}
+
+.botones{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.boton{
+
+background:#ff6b35;
+
+color:white;
+
+padding:18px 35px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:600;
+
+transition:.3s;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.boton:hover{
+
+background:#f25317;
+
+transform:translateY(-4px);
+
+}
+
+.scroll{
+
+position:absolute;
+
+bottom:25px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:40px;
+
+color:white;
+
+text-decoration:none;
+
+animation:flotar 2s infinite;
+
+}
+
+@keyframes flotar{
+
+0%{transform:translate(-50%,0);}
+
+50%{transform:translate(-50%,10px);}
+
+100%{transform:translate(-50%,0);}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+#portafolio{
+
+padding:80px 8%;
+
+background:white;
+
+}
+
+#portafolio h2{
+
+text-align:center;
+
+font-size:46px;
+
+margin-bottom:15px;
+
+}
+
+#portafolio p{
+
+text-align:center;
+
+color:#666;
+
+margin-bottom:50px;
+
+font-size:18px;
+
+}
+
+.galeria{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:25px;
+
+}
+
+.proyecto{
+
+background:white;
+
+border-radius:12px;
+
+overflow:hidden;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.proyecto:hover{
+
+transform:translateY(-6px);
+
+}
+
+.proyecto img{
+
+width:100%;
+
+display:block;
+
+height:auto;
+
+}
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+background:#222;
+
+color:white;
+
+margin-top:70px;
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.boton{
+
+width:100%;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Juan Pablo<br>
+Ríos Agudelo
+
+</h1>
+
+<h2>
+
+Comunicador Social • Diseñador Gráfico<br>
+
+Especialista en Gerencia de la Comunicación Organizacional
+
+</h2>
+
+<p>
+
+Más de doce años creando estrategias de comunicación,
+identidad visual y campañas para organizaciones públicas,
+privadas y de cooperación internacional.
+
+</p>
+
+<div class="botones">
+
+<a href="#portafolio" class="boton">
+
+Ver Portafolio
+
+</a>
+
+<a href="Hoja de vida Juan Pablo Ríos Agudelo 2026_compressed.pdf"
+
+target="_blank"
+
+class="boton">
+
+Hoja de Vida
+
+</a>
+
+</div>
+
+</div>
+
+<a href="#portafolio" class="scroll">
+
+↓
+
+</a>
+
+</section>
+
+<section id="portafolio">
+
+<h2>
+
+Portafolio
+
+</h2>
+
+<p>
+
+Algunos de mis proyectos en comunicación,
+diseño gráfico e identidad visual.
+
+</p><div class="proyecto">
+<img src="imagenes/0d59bf104127149.5f5bd20cc0c18.png" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/1. Infografía REDES COMUNICACION 2022_pages-to-jpg-0001.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/1. Infografía REDES COMUNICACION 2022_pages-to-jpg-0005.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/f63a26104128557.5f5bd9756445f6.png" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/22c719104129203.5f5bddc5b1fb3 (1).jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/63390c104127805.5f5bd55886171.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/85b127103813761.5f55a19a79e46.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/87191d104128703.5f5bda781b92a.png" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/94013a104128419.5f5bd8b9ac51.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/9e5bea104129359.5f5bde5bef466.png" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/Afiche 1.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/Camiseta negra CAN.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/Copys la Rolita_finales-1.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/Copys la Rolita_finales-2.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/Creación de marca Proyecto LOT 2024 Ocensa.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/DE NACIONAL ESTA VIDA.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/DE NACIONAL ESTA VIDA_camiseta.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/Derecho 01.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/Diploma, Firma Pacto.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/INFOGRAFIA 16 ABRIL IDO ICO.png" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/Logo Paginera.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/PROPUESTA AFICHE 6.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/Retrato expresionista .jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/Solicitación San Juan de Urabá con marca.jpg" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/arauca.png" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/diseño palabras asamblea (1).png" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/mapa caminantes.png" alt="">
+</div>
+
+<div class="proyecto">
+<img src="imagenes/nacional 2.jpg" alt="">
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 · Juan Pablo Ríos Agudelo
+
+</footer>
+
+</body>
+
+</html>
+
+<div class="galeria">
