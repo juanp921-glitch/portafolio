@@ -328,6 +328,38 @@ height:150px;
 
 }
 
+
+
+.lightbox-overlay{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.9);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:9999;
+padding:20px;
+}
+.lightbox-overlay.active{display:flex;}
+.lightbox-overlay img{
+max-width:95vw;
+max-height:90vh;
+width:auto;
+height:auto;
+object-fit:contain;
+border-radius:10px;
+box-shadow:0 0 30px rgba(0,0,0,.5);
+}
+.lightbox-close{
+position:absolute;
+top:20px;
+right:30px;
+font-size:42px;
+color:#fff;
+cursor:pointer;
+font-family:Arial,sans-serif;
+}
+
 </style>
 
 </head>
@@ -395,44 +427,44 @@ Hoja de Vida
 <h2>Portafolio</h2>
 <p>Algunos de mis proyectos en comunicación, diseño gráfico e identidad visual.</p>
 <div class="galeria">
-<div class="proyecto"><img src="diseño (10).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (11).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (12).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (13).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (14).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (15).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (16).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (2).png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (3).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (4).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (5).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (6).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (7).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (8).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño (9).jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 20.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 21.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 22.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 23.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 26.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 28.jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 30.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 31.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 32.jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 33.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 34.jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 35.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 36.jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 37.jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 38.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 39.jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño 40.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño.jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño1.png" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño2.jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño3.jpg" alt="Proyecto"></div>
-<div class="proyecto"><img src="diseño4.png" alt="Proyecto"></div>
+<div class="proyecto"><a href="diseño (10).jpg" class="lightbox-link"><img src="diseño (10).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (11).jpg" class="lightbox-link"><img src="diseño (11).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (12).jpg" class="lightbox-link"><img src="diseño (12).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (13).jpg" class="lightbox-link"><img src="diseño (13).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (14).jpg" class="lightbox-link"><img src="diseño (14).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (15).jpg" class="lightbox-link"><img src="diseño (15).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (16).jpg" class="lightbox-link"><img src="diseño (16).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (2).png" class="lightbox-link"><img src="diseño (2).png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (3).jpg" class="lightbox-link"><img src="diseño (3).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (4).jpg" class="lightbox-link"><img src="diseño (4).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (5).jpg" class="lightbox-link"><img src="diseño (5).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (6).jpg" class="lightbox-link"><img src="diseño (6).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (7).jpg" class="lightbox-link"><img src="diseño (7).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (8).jpg" class="lightbox-link"><img src="diseño (8).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño (9).jpg" class="lightbox-link"><img src="diseño (9).jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 20.png" class="lightbox-link"><img src="diseño 20.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 21.png" class="lightbox-link"><img src="diseño 21.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 22.png" class="lightbox-link"><img src="diseño 22.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 23.png" class="lightbox-link"><img src="diseño 23.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 26.png" class="lightbox-link"><img src="diseño 26.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 28.jpg" class="lightbox-link"><img src="diseño 28.jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 30.png" class="lightbox-link"><img src="diseño 30.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 31.png" class="lightbox-link"><img src="diseño 31.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 32.jpg" class="lightbox-link"><img src="diseño 32.jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 33.png" class="lightbox-link"><img src="diseño 33.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 34.jpg" class="lightbox-link"><img src="diseño 34.jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 35.png" class="lightbox-link"><img src="diseño 35.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 36.jpg" class="lightbox-link"><img src="diseño 36.jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 37.jpg" class="lightbox-link"><img src="diseño 37.jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 38.png" class="lightbox-link"><img src="diseño 38.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 39.jpg" class="lightbox-link"><img src="diseño 39.jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño 40.png" class="lightbox-link"><img src="diseño 40.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño.jpg" class="lightbox-link"><img src="diseño.jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño.png" class="lightbox-link"><img src="diseño.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño1.png" class="lightbox-link"><img src="diseño1.png" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño2.jpg" class="lightbox-link"><img src="diseño2.jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño3.jpg" class="lightbox-link"><img src="diseño3.jpg" alt="Proyecto"></a></div>
+<div class="proyecto"><a href="diseño4.png" class="lightbox-link"><img src="diseño4.png" alt="Proyecto"></a></div>
 </div>
 </section>
 </section>
@@ -442,6 +474,27 @@ Hoja de Vida
 © 2026 · Juan Pablo Ríos Agudelo
 
 </footer>
+
+
+<div class="lightbox-overlay" id="lightbox">
+<span class="lightbox-close" id="lightboxClose">&times;</span>
+<img id="lightboxImage" src="" alt="">
+</div>
+
+<script>
+const overlay=document.getElementById('lightbox');
+const overlayImg=document.getElementById('lightboxImage');
+document.querySelectorAll('.lightbox-link').forEach(link=>{
+ link.addEventListener('click',e=>{
+   e.preventDefault();
+   overlayImg.src=link.getAttribute('href');
+   overlay.classList.add('active');
+ });
+});
+document.getElementById('lightboxClose').onclick=()=>overlay.classList.remove('active');
+overlay.addEventListener('click',e=>{if(e.target===overlay)overlay.classList.remove('active');});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')overlay.classList.remove('active');});
+</script>
 
 </body>
 
